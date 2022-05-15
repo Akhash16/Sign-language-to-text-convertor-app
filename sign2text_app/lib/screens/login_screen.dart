@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:sign2text_app/components/consts.dart';
+import 'package:sign2text_app/screens/home_screen.dart';
+import 'package:sign2text_app/screens/register_screen.dart';
+import 'package:sign2text_app/utils/authentication_service.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -95,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
-                        color:  Color(0x00000000),
+                        color: Color(0x00000000),
                         width: 0,
                       ),
                       borderRadius: BorderRadius.circular(12),
@@ -186,14 +190,23 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Center(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  // String email = emailAddressController.text.trim();
+                  // String password = passwordLoginController.text.trim();
+
+                  // context.read<AuthenticationService>().signIn(
+                  //   email: email,
+                  //   password: password,
+                  // );
+                    Navigator.pushNamed(context, HomePage.id);
+                  
+                },
                 style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                      
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
                     ),
-                  ),
                     backgroundColor:
                         MaterialStateProperty.all<Color>(kPrimaryColor)),
                 child: Container(
@@ -216,18 +229,31 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(
               height: 10,
             ),
-            Center(
-              child: TextButton(
-                
-                onPressed: null,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [ TextButton(
+                onPressed: (){Navigator.pushNamed(context, RegisterPage.id);},
                 child: Text(
-                  "Forgot Password?",
+                  "Don't have an account?",
                   style: GoogleFonts.montserrat(
+                    color: kSecondaryColor,
                     fontSize: 15,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
+                TextButton(
+                  onPressed: (){},
+                  child: Text(
+                    "Forgot Password?",
+                    style: GoogleFonts.montserrat(
+                      color: kSecondaryColor,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

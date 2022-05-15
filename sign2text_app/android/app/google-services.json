@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "775789905870",
+    "project_id": "sign2text-12ebf",
+    "storage_bucket": "sign2text-12ebf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775789905870:android:8c65753a138710cb2b0d9f",
+        "android_client_info": {
+          "package_name": "com.example.sign2text_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775789905870-ll1551ufmja2hqst08tkdeqcsnof07iq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sign2text_app",
+            "certificate_hash": "7e4d2cafd8567fa6ba7cc9b86c3a02a0098a3ae7"
+          }
+        },
+        {
+          "client_id": "775789905870-rteih3nrl0bn8kvn048vms4t2jqqui8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU_OqL1nyRTFDJqcBKUVCgqk79rni9l4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775789905870-rteih3nrl0bn8kvn048vms4t2jqqui8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

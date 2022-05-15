@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sign2text_app/screens/login_screen.dart';
+import 'package:sign2text_app/utils/authentication_service.dart';
 import '../components/consts.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -254,7 +256,10 @@ TextEditingController emailAddressController = TextEditingController();
               ),
               Center(
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+
+                    Navigator.pushNamed(context, LoginPage.id);
+                  },
                   style: ButtonStyle(
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
@@ -284,7 +289,19 @@ TextEditingController emailAddressController = TextEditingController();
               const SizedBox(
                 height: 10,
               ),
-              
+              Center(
+              child: TextButton(
+                onPressed: (){Navigator.pushNamed(context, LoginPage.id);},
+                child: Text(
+                  "Already have an account?",
+                  style: GoogleFonts.montserrat(
+                    color: kSecondaryColor,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ),
             ],
           ),
       ),

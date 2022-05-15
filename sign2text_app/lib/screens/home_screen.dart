@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import 'package:sign2text_app/screens/login_screen.dart';
+import 'package:sign2text_app/utils/authentication_service.dart';
 
 import '../components/consts.dart';
 
@@ -14,8 +17,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: kTertiaryColor,
-        leading: const IconButton(
-          onPressed: null,
+        leading: IconButton(
+          onPressed: (){
+Navigator.pushNamed(context, LoginPage.id);
+          },
           icon: Icon(Icons.arrow_back_ios),
         ),
       ),
@@ -43,7 +48,8 @@ class HomePage extends StatelessWidget {
                 ),
             
             
-          )
+          ),
+         
         ],
       ),
     );
