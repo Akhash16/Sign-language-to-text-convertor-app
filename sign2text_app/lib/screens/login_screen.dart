@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
       backgroundColor: kTertiaryColor,
-      body: Container(
+      body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
