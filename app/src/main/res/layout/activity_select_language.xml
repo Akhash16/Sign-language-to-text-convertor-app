@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white111"
+    tools:context=".SelectLanguage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Choose any sign language:"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:id="@+id/lang"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+
+
+        />
+
+    <Button
+        android:layout_below="@+id/lang"
+        android:drawableLeft="@drawable/usa"
+
+        android:id="@+id/eng_btn"
+        android:layout_centerHorizontal="true"
+        android:text="ASL"
+        android:textColor="#050505"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape1"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+    <Button
+        android:drawableLeft="@drawable/ind"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tam_btn"
+        android:layout_below="@+id/eng_btn"
+        android:text="ISL"
+        android:textColor="#050505"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape1"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+    <Button
+        android:drawableLeft="@drawable/uk"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/hin_btn"
+        android:layout_below="@+id/tam_btn"
+        android:text="BSL"
+        android:textColor="#050505"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape1"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+<!--    <Button-->
+<!--        android:id="@+id/next"-->
+<!--        android:layout_width="270dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:background="@drawable/buttonshape"-->
+<!--        android:shadowColor="#A8A8A8"-->
+<!--        android:shadowDx="0"-->
+<!--        android:shadowDy="0"-->
+<!--        android:shadowRadius="5"-->
+<!--        android:text="Next"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="21sp"-->
+<!--        android:textStyle="bold" />-->
+
+</RelativeLayout>
